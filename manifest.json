@@ -1,7 +1,7 @@
 {
-  "name": "随风起の主页",
-  "short_name": "随风起の主页",
-  "description": "一个默默无闻的主页",
+  "name": "BZMDQZの主页",
+  "short_name": "BZMDQZの主页",
+  "description": "",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#424242",
