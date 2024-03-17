@@ -126,7 +126,7 @@ $('#hitokoto').click(function () {
             .catch(console.error)
     } else {
         iziToast.show({
-            timeout: 1000,
+            timeout: 500,
             icon: "fa-solid fa-circle-exclamation",
             message: '你点太快了吧'
         });
@@ -138,9 +138,9 @@ $('#hitokoto').click(function () {
 //请前往 https://dev.qweather.com/ 申请 key
 const add_id = "vcpmlmqiqnjpxwq1"; // app_id
 const app_secret = "PeYnsesgkmK7qREhIFppIcsoN0ZShv3c"; // app_secret
-const key = "691d007d585841c09e9b41e79853ecc2" // key
+const key = "72105666a8a242869042a7e20673ba0c" // key
 function getWeather() {
-    fetch("https://www.mxnzp.com/api/ip/self?app_id=" + add_id + "&app_secret=" + app_secret)
+    fetch("ttps://devapi.qweather.com/v7/weather/3d?location=101010100&key=" + key)
         .then(response => response.json())
         .then(data => {
             let str = data.data.city
