@@ -13,12 +13,10 @@
     "facebook": "bottom_user",
     "link_1": [
         "http://blog.gl18cloud.asia/",
-        "fa-solid fa-blog",
         "博客"
     ],
     "link_2": [
         "https://bilibili.com",
-        "fa-solid fa-cloud",
         "统计"
     ],
     "Copyright_text": "Fork from Aurora",
