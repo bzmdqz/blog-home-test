@@ -126,7 +126,7 @@ $('#hitokoto').click(function () {
             .catch(console.error)
     } else {
         iziToast.show({
-            timeout: 500,
+            timeout: 400,
             icon: "fa-solid fa-circle-exclamation",
             message: '你点太快了吧'
         });
@@ -140,14 +140,14 @@ const add_id = "vcpmlmqiqnjpxwq1"; // app_id
 const app_secret = "PeYnsesgkmK7qREhIFppIcsoN0ZShv3c"; // app_secret
 const key = "72105666a8a242869042a7e20673ba0c" // key
 function getWeather() {
-    fetch("ttps://devapi.qweather.com/v7/weather/3d?location=101010100&key=" + key)
+    fetch("ttps://devapi.qweather.com/v7/weather/3d?location=101300501&key=" + key)
         .then(response => response.json())
         .then(data => {
             let str = data.data.city
             let city = str.replace(/市/g, '')
             console.log(data,"sssss")
             $('#city_text').html(city);
-            fetch("https://geoapi.qweather.com/v2/city/lookup?location=" + city + "&number=1&key=" + key)
+            fetch("https://devapi.qweather.com/v7/weather/now?" + city + "&number=1&key=" + key)
                 .then(response => response.json())
                 .then(location => {
                     let id = location.location[0].id
